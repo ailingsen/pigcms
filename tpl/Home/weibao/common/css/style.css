@@ -1,0 +1,363 @@
+/**
+
+author : zhupinglei
+
+desc : style
+
+**/
+
+body{background: #fff; font-family:"微软雅黑"}
+
+a{text-decoration: none;}
+
+
+
+#header{}
+
+
+
+#header .top{height:63px; border-bottom: 1px solid #2b2b2b; overflow: hidden; background: url('../images/top.png') repeat-x; position: fixed;left: 0;top: 0;z-index: 1000;width: 100%;}
+
+#header .topCon{width:1050px; height: 100%; margin:0 auto; overflow: hidden;}
+
+#header .topCon h1{width:174px; float: left; overflow: hidden; padding-top:10px;}
+
+#header .nav{overflow: hidden; padding-top:20px; padding-left:50px; float: left;  font-weight:bolder}
+
+#header .nav li{float: left; margin-left:10px; height:32px; line-height: 32px; overflow: hidden; border-radius: 5px; font-size:14px;}
+
+#header .nav li a{display:block; padding:0 15px; color:#ccc;}
+
+#header .nav li a:hover,#header .nav li.hover a{background: #6eab23; color:#fff;}
+
+#header .nom{height:50%; width:240px; float: right; overflow: hidden; background: url('../images/no.png') center bottom no-repeat; color:#ccc;word-wrap:break-word; word-break:break-all; text-align: center; padding-top:13px;}
+
+#header .nom a{color:#77cd0e;}
+
+
+
+#header .banner{width:100%; height:640px; overflow: hidden; background: url('../images/bannerBg.jpg') center top no-repeat; position: relative; margin-top:64px;}
+
+#header .bannerBtn span{position: absolute; top:190px; width:60px; height:150px; z-index:99; background: url('../images/barr.png') no-repeat; cursor: pointer;}
+
+#header .bannerBtn span.bannerBtn_left{left:0;}
+
+#header .bannerBtn span.bannerBtn_right{background-position:-60px 0; right:0;}
+
+#header .bannerBody{width:980px; height:610px; overflow: hidden; margin:0 auto; position: relative;}
+
+#header .bannerBody .bannerBox{width:1960px; height:640px; position: relative; left:0;}
+
+#header .bannerBody .bannerItem{width:980px; height:640px; overflow: hidden; position: absolute; left:0; top:0; display:none;}
+
+#header .bannerIcon{height:30px; border-bottom: 1px solid #000; overflow: hidden; background: url('../images/bbg.png') 0 bottom repeat-x; text-align: center;}
+
+#header .bannerIcon i{display:inline-block; width:15px; height:15px; overflow: hidden; background: url('../images/bic.png') no-repeat; margin:6px 10px;}
+
+#header .bannerIcon i.hover{background-position: -15px 0;}
+
+
+
+#video{height:200px; overflow: hidden; border-top:1px solid #fff; border-bottom:1px solid #c5c5c5; background: #e6e6e6;}
+
+#video ul{width:980px; margin:0 auto;}
+
+#video li{width:25%; text-align: center; float:left; margin-top:40px; opacity:1;}
+
+#video li img{cursor: pointer;}
+
+#video li p{margin-top:10px; font-size:13px; color:#666; cursor: pointer;}
+
+
+
+.content_moban_bot {
+
+    width: 980px;
+
+    height: 80px;
+
+	padding:10px 0;
+
+	font-size:32px;
+
+	font-weight:bold;
+
+	line-height:80px;
+
+	color:#666;
+
+	text-align:center;
+
+}
+
+.content_moban_bot span{color:#F30; font-size:50px;}
+
+
+
+#func{width:980px; margin:0 auto; overflow: hidden;}
+
+#func .zi{text-align: center; padding:30px 0;}
+
+#func li{width:25%; height: 170px; padding-top:20px; padding-bottom: 20px; float: left; text-align: center; overflow: hidden;}
+
+#func li p{font-size:16px; color:#333;}
+
+#func li div{color:#999; width:165px; margin:0 auto; line-height: 20px; padding-top:5px;}
+
+#func .more{padding:30px 0 50px 0; border-bottom:1px solid #ccc;}
+
+#func .more a{display:block; width:253px; height:34px; overflow:hidden; margin:0 auto; background: url('../images/lm1.png') no-repeat; text-indent: -20em;}
+
+#func .more a:hover{background: url('../images/lm2.png') no-repeat;}
+
+
+
+#case{height:570px; overflow: hidden; background: #eaeaea;}
+
+#case .caseCon{width:980px; margin:0 auto;}
+
+#case .tit{height: 72px; overflow: hidden; border-bottom:1px solid #cfcfcf; position: relative;}
+
+#case .tit h2{height:42px; color:#333; font-weight: normal; margin-top:30px; line-height: 36px; font-size:24px;}
+
+#case .tit h2 span{color:#999;}
+
+#case .tit a{position: absolute; right:0; bottom:10px; padding:5px 10px; border-radius: 10px; background: #333; color: #999;}
+
+#case .tit a:hover{background: #009900; color:#fff;}
+
+#case .caseScroll{position: relative; border-bottom: 1px solid #ccc;}
+
+#case .caseScroll .btn span{position: absolute; top:44px; width:43px; height:249px; overflow: hidden; background: url('../images/arr.png') no-repeat; cursor: pointer;}
+
+#case .caseScroll .btn span.btn_left{left:0;}
+
+#case .caseScroll .btn span.btn_right{right:0; background-position: -43px 0;}
+
+#case .caseScroll .box{width:879px; margin:20px 50px; height: 338px; overflow: hidden; position: relative;}
+
+#case .caseScroll .box ul{width:904px; position: relative; left:0;}
+
+#case .caseScroll .box li{width:179px; height:317px; padding:5px 11px 15px; background: url('../images/caseBg.png') no-repeat; position: absolute; left:0; top:0; overflow: hidden; margin-right:25px;}
+
+#case .typical{height:70px; overflow: hidden; margin-top:25px;}
+
+#case .typical h3{float: left; padding-top:13px; padding-right:10px;}
+
+#case .typical .logos{float: left; width:900px; overflow: hidden;}
+
+#case .typical .logos a{margin:0 5px; display:block; width:140px; height:70px; overflow: hidden; float:left;}
+
+
+
+#mass{overflow: hidden; padding-bottom:50px;}
+
+#mass .massCon{width:980px; margin:0 auto; padding-top:50px;}
+
+#mass .massNav{height:30px; border-radius:15px; background: #666;}
+
+#mass .massNav ul{height: 40px; display:block; width:320px; margin:0 auto; position: relative;}
+
+#mass .massNav li{width:105px; height:40px; line-height: 40px; text-align: center; overflow: hidden; border-radius: 20px; overflow: hidden; float: left; margin-top:-5px; font-size:14px; color:#fff; cursor:pointer; position: relative; z-index: 10;}
+
+#mass .massNav li.hover{color:#333;}
+
+#mass .massNav li.bgs{position: absolute; left:0; top:0; z-index: 9; background: url('../images/nb.png') no-repeat; font-weight: bold;}
+
+
+
+#mass .massList{margin-top:44px; overflow: hidden;}
+
+#mass .massList .massItem{display:none;}
+
+#mass .massList .massItem.show{display:block;}
+
+#mass .massList .massItem ul{margin-bottom:30px;}
+
+#mass .massList li{width:221px; overflow: hidden; line-height: 22px; float: left; margin:0 12px;}
+
+#mass .massList li a{color:#999;}
+
+#mass .massList li div{font-size:14px; color:#191919; margin-bottom:10px; font-weight:bold}
+
+#mass a.mm{display:block; width:129px; height:39px; overflow: hidden; background: url('../images/mm.png') no-repeat; margin:10px auto; font-size:16px; color:#fff; line-height: 39px; padding-left:60px;}
+
+#mass a.mm:hover{background: url('../images/mm2.png') no-repeat;}
+
+
+
+#footer{height: 150px; overflow: hidden; background: #2c2c2c; box-shadow: inset 0px 5px 5px #111;}
+
+#footer .footerCon{width:980px; margin:0 auto;}
+
+#footer .footerCon ul{width:890px; margin-left:70px; margin-top:80px;}
+
+#footer .footerCon li{float: left; width:150px; overflow: hidden;}
+
+#footer .footerCon li a{color: #999;}
+
+#footer .footerCon li dt{border-left:4px solid #33cc00; height:16px; line-height: 16px; overflow: hidden; font-size:14px; padding-left:10px; color:#fff;}
+
+#footer .footerCon li dd{line-height: 26px; margin-top:10px; padding-left:14px;}
+
+#footer .footerCon li.spc{width:290px;}
+
+#footer .contact{color: #ccc; height:40px; line-height: 40px; text-align: center; border-bottom:1px solid #222; font-size:13px; margin-top:10px;}
+
+#footer .contact img{position: relative; top:3px;}
+
+#footer .contact span{color:#66cc33;}
+
+#footer .cin{height:40px; line-height: 40px; overflow: hidden; color: #666; text-align: center;}
+
+
+
+#crow{width:680px; height:500px; position:relative;}
+
+#crow a{position: absolute; color:#fff;}
+
+
+
+#login{width:300px; height:370px; position: absolute; right:0; top:110px;}
+
+#login .loginBg{width:100%; height:100%; background: #333; opacity:0.6; position: absolute; left:0; top:0;}
+
+#login .loginCon{width:90%; height:90%; padding:5%; position: absolute; left:0; top:0;}
+
+#login .loginCon .insite{width:264px; height:132px; overflow: hidden; background: url('../images/login.png') no-repeat; color:#fff; font-size:20px;}
+
+#login .loginCon .insite span{color:#ff9900;}
+
+#login .loginCon img{margin-bottom:10px;}
+
+#login .loginCon a{display:block; width:256px; height:67px; overflow: hidden; background: url('../images/btn.png') no-repeat; text-indent: -200em; margin-top:25px;}
+
+
+
+#login .loginCon a.ty:hover img{position: absolute; width:256px; height:auto; left:0; top:0; z-index:99;}
+
+#login .loginCon a.sq{background-position: 0 -67px;}
+
+
+
+#mask{position: fixed; filter:alpha(opacity=80); left:0; top:0; width:100%; height:100%; background: #000; opacity:0.8; z-index: 1000; display:none;}
+
+#popUp{position: fixed; left:0; top:0; background: #fff; color:#fff; z-index:1001; display:none;}
+
+#popClose{width:50px; height:50px; cursor: pointer; overflow: hidden; background: url('../images/close.png') no-repeat; position: fixed; right:20px; top:20px; z-index: 1001; display:none;}
+
+
+
+.main_about{font-size:14px; line-height:180%; color:#999;}
+
+.main_abouttop{padding-bottom:30px;}
+
+.main_abouttop img{padding-bottom:20px;}
+
+.main_abouttop p{text-indent:28px;}
+
+
+
+.joblist{width:980px;}
+
+.jobbox{width:225px; padding:0 10px; float:left}
+
+.jobbox h5{font-size:16px; font-weight:normal; color:#333}
+
+.jobbox div{font-size:12px;}
+
+
+
+.pfix{
+
+	width:68px;
+
+	height: 56px;
+
+	position: fixed;
+
+	right:10px;
+
+	bottom:10px;
+
+	border:1px solid #ccc;
+
+}
+
+
+
+.pfix .simg{
+
+	width:100%;
+
+	height:100%;
+
+	overflow: hidden;
+
+	background: #fff;
+
+	text-align: center;
+
+}
+
+
+
+.pfix .simg img{
+
+	margin:5px auto 2px;
+
+}
+
+
+
+.pfix .bimg{
+
+	display: none;
+
+	width:200px; 
+
+	position: fixed;
+
+	right:85px;
+
+	bottom:10px;
+
+	border:1px solid #ccc;
+
+	background: #fff;
+
+	text-align: center;
+
+}
+
+
+
+.pfix .bimg img{
+
+	width:200px;
+
+	height: 200px;
+
+	margin:5px auto 0;
+
+}
+
+
+
+.pfix .bimg p{
+
+	padding:0 10px 5px;
+
+	line-height: 16px;
+
+	color:#999;
+
+}
+
+
+
+.pfix:hover .bimg{
+
+	display: block;
+
+}

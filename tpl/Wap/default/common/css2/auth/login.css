@@ -1,0 +1,213 @@
+html {
+	font-size:62.5%;
+	background-color:#f4f4f4
+}
+body {
+	font-family:'arial';
+	-webkit-user-select:none;
+	-webkit-text-size-adjust:none;
+	-webkit-overflow-scrolling:touch;
+	font-size:12px
+}
+ul,ol {
+	list-style:none
+}
+i,em,var {
+	font-style:normal
+}
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,form,input,textarea {
+	margin:0;
+	padding:0
+}
+img,fieldset {
+	border:0
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:1.2rem;
+	font-weight:normal
+}
+input,img {
+	vertical-align:middle
+}
+a:link,a:visited {
+	text-decoration:none
+}
+a,li,input,button,section,span,div {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-moz-tap-highlight-color:rgba(0,0,0,0);
+	-o-tap-highlight-color:rgba(0,0,0,0);
+	-ms-tap-highlight-color:rgba(0,0,0,0);
+	tap-highlight-color:rgba(0,0,0,0)
+}
+.H {
+    background: none repeat scroll 0 0 #E8E8E8;
+    border-bottom: 1px solid #D9D9D9;
+    color: #333333;
+    font-size: 1.6rem;
+    height: 46px;
+    line-height: 46px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+ 
+.login_btn {
+cursor: pointer;
+display: block;
+text-align: center;
+color: white;
+font: normal 12px/29px Arial;
+border: #397300 solid 1px;
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#66B601),to(#599D00),color-stop(0.01,#A0D363),color-stop(0.04,#66B601));
+border-radius: 3px;
+}
+.loginCon,.centerCon {
+	 
+	height:100%;
+	width:100%;
+	background:#f4f4f4
+}
+#login_con,#center_con,.login_foot {
+ 
+	    margin: 1px 8px 15px;
+	background:#f4f4f4;
+	width:auto;
+	color:#333;
+	clear:both;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+ 
+}
+#center_con {
+	padding:0 15px 10px 15px
+}
+#login_con .show,#center_con .show {
+	display:block
+}
+.H .login_btn,.H .regist_btn {
+	border:#397300 solid 1px;
+	cursor:pointer;
+	display:block;
+	text-align:center;
+	border-radius:3px;
+	font:normal 12px/29px Arial;
+	position:absolute;
+	height:28px;
+	line-height:28px;
+	width:48px;
+	top:8px;
+	right:10px;
+	background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#eee));
+	border-color:#bdbdbd;
+	color:#666
+}
+
+.H .back {
+    background-image: url("../../images/auth/logo.png");
+    background-position: left 0px;
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+    color: #999999 !important;
+    display: block;
+    font-family: 'Arial';
+    font-size: 14px !important;
+    height: 30px;
+    left: 7px;
+    line-height: 30px;
+    padding-left: 27px;
+    position: absolute;
+    top: 8px;
+    width: 50px;
+    z-index: 1;
+}
+.login_btn:active {
+    background: none repeat scroll 0 0 #569D00;
+    border: 1px solid #3B7600;
+}
+.inputText {
+	display:-webkit-box;
+	 margin-left:10px;
+	margin-top:10px;
+	height:30px;
+} 
+.login_self .login_input {
+	display:block;
+	 
+	height:30px;
+ 
+	padding:0 2%;
+	border:0;
+	font-size:14px;
+	outline:0
+}
+.login_self span.getsmspass {
+	border:#397300 solid 1px;
+	cursor:pointer;
+	display:block;
+	text-align:center;
+	border-radius:3px;
+	font:normal 12px/29px Arial;
+	padding :0 5px;
+	height:25px;
+	line-height:28px;
+	width:48px;
+ margin:2px 10px;
+	background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#eee));
+	border-color:#bdbdbd;
+	color:#666
+}
+.login_btn_now {
+	display:block;
+	font-size:15px;
+	margin:10px;
+
+	width:auto;
+	height:38px;
+	line-height:40px
+}
+.login_self input::-webkit-input-placeholder {
+	color:#aaa;
+	font-size:14px;
+	line-height:18px
+}   
+.t_Login {
+	display:-webkit-box
+}
+.t_Login span {
+	border-right: 1px solid #FFFFFF;
+	display:block;
+	height:40px;
+	background:#e57344;
+	/*border-radius:3px;*/
+	-webkit-box-flex:1;
+	text-align:center
+}
+.t_Login span.current {
+	background:#4096f2
+}
+.t_Login span:active {
+	background:#cf673c
+}
+.t_Login span.current:active {
+	background:#3a86d6
+}
+.t_Login em {
+	display:inline-block;
+	width:10px;
+	height:55px
+}
+.t_Login .t_icon {
+	margin-top:8px;
+	display:inline-block;
+	height:24px;
+	width:70px;
+	padding-left:30px;
+	line-height:26px;
+	color:white;
+	text-align:left;
+	/*background-image:url("../../images/auth/user_login.png");*/
+	background-repeat:no-repeat;
+	background-size:30px;
+	font-size:16px
+}

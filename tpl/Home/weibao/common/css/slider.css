@@ -1,0 +1,15 @@
+﻿/* 酷站代码整理 转载请注明出处 http://www.5icool.org */
+@charset "utf-8";
+*{margin:0px;padding:0px;outline:none;list-style-type:none;border:none;}
+/* QQbox */
+.QQbox{z-index:1000;width:410px;left:-276px;top:0;margin:149px 0 0 0;position:fixed;}
+*html,*html body{background-image:url(about:blank);background-attachment:fixed;}
+*html .QQbox{position:absolute;top:expression(eval(document.documentElement.scrollTop));}
+.QQbox .press{left:0;border:none;cursor:pointer;width:32px;height:96px;position:absolute;padding-top:140px;}
+.QQbox .Qlist{float:left;width:410px;background:url(img/bj01.png) no-repeat;background-position:1px 0px;height:436px;display:block;overflow:hidden;zoom:1;}
+.QQbox .Qlist .infobox{text-align:center;background-repeat:no-repeat;padding:5px;line-height:14px;color:#CCCCCC;font-weight:700;}
+.QQbox .Qlist .con{margin-top:266px;margin-left:50px;color:#32567e;font-size:14px;}
+.QQbox .Qlist .con ul li{height:31px;list-style:none;margin-left:35px;}
+.QQbox .Qlist .con ul li a{font-size:13px;margin-left:18px;text-decoration:none;}
+.OnlineLeft{float:left;display:inline;width:262px;height:439px;overflow:hidden;zoom:1;}
+.OnlineBtn{float:right;display:inline;width:127px;height:36px;background:url(img/bj02.png) no-repeat;margin-top:-45px;margin-left:220px;}

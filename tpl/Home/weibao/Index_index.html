@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="uyan_auth" content="04a3f6938d" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>{pigcms::C('site_title')}-{pigcms::C('site_name')}</title>
+    <meta name="keywords" content="{pigcms::C('keyword')}"/>
+    <meta name="description" content="{pigcms::C('content')}"/>
+<link rel="stylesheet" type="text/css" href="{pigcms::RES}/css/base.css" />
+<link rel="stylesheet" type="text/css" href="{pigcms::RES}/css/style.css" />
+<link href="{pigcms::RES}/css1/css.css" rel="stylesheet" type="text/css" media="all">
+<link href="{pigcms::RES}/css1/online.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="{pigcms::RES}/css1/base.css" />
+<link rel="stylesheet" type="text/css" href="{pigcms::RES}/css1/style.css" />
+<link href="{pigcms::RES}/css/slider.css" rel="stylesheet" type="text/css" charset="utf-8">
+<script type="text/javascript" src="{pigcms::RES}/js/jquery-1.7.2.min.js" charset="utf-8"></script>
+<SCRIPT src="{pigcms::RES}/js1/jquery.min.js" type=text/javascript></SCRIPT>
+<SCRIPT src="{pigcms::RES}/js1/jquery.cityselect.js" type=text/javascript></SCRIPT>
+<SCRIPT src="{pigcms::RES}/js/jquery.min.js" type=text/javascript></SCRIPT>
+<SCRIPT src="{pigcms::RES}/js/jquery.cityselect.js" type=text/javascript></SCRIPT>    <script type="text/javascript" src="{pigcms::RES}/js/jquery.windstagball.js"></script>
+
+    <script type="text/javascript" src="{pigcms::RES}/js/index.js"></script>
+
+    <style type="text/css">
+<!--
+.STYLE1 {
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+}
+-->
+    </style>
+</head>
+
+<body>
+<style type="text/css">
+
+.TabTitle{
+
+clear: both;
+
+height:40px;
+
+width:1155px;
+
+margin:20px auto;
+
+background:#dbdbdb;
+
+overflow: hidden;
+
+}
+
+.TabTitle ul{
+
+margin:0;
+
+padding:0;
+
+}
+
+.TabTitle li{
+
+float:left;
+
+width:1155px;
+
+line-height:40px;
+
+cursor:pointer;
+
+list-style-type: none;
+
+}
+
+.TabTitle .active{background-color:#1ba814; text-align:center; font-size:14px; color:#fff; font-weight:bolder}
+
+
+
+.TabContent{
+
+width:auto;
+
+background:#fff;
+
+margin:0px auto;
+
+}
+
+.none {display:none;}
+
+</style>
+
+<script type="text/javascript">
+
+function nTabs(thisObj,Num){
+
+if(thisObj.className == "active")return;
+
+var tabObj = thisObj.parentNode.id;
+
+var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+
+for(i=0; i <tabList.length; i++)
+
+{
+
+  if (i == Num)
+
+  {
+
+   thisObj.className = "active"; 
+
+      document.getElementById(tabObj+"_Content"+i).style.display = "block";
+
+  }else{
+
+   tabList[i].className = "normal"; 
+
+   document.getElementById(tabObj+"_Content"+i).style.display = "none";
+
+  }
+
+} 
+
+}
+
+</script>
+
+<div id="header">
+
+    <div class="top">
+
+    <div class="topCon clearfix">
+
+        <h1><a href="/"><img src="{pigcms::RES}/images/logo.png" alt="{pigcms::C('site_name')}" /></a></h1>
+
+        <ul class="nav">
+
+            <li class="hover"><a href="/"></a></li>
+
+            <li ><a href="/minisite.html"></a></li>
+
+            <li ><a href="/service.html"></a></li>
+
+            <li ><a href="/case.html"></a></li>
+
+            <li ><a href="/media.html"></a></li>
+
+            <li ><a href="/join.html"></a></li>
+
+            <li ><a href="/me.html"></a></li>
+
+        </ul>
+
+        <div class="nom">官方微信号：<a href="javascript:showattention('attention');">weixin8888</a></div>
+
+    </div>
+
+</div>
+
+
+
+    <script type="text/javascript">
+
+    function showattention(obj){
+
+        //document.getElementById(obj).style.display = 'block';
+
+        $('#'+obj).show();
+
+    }
+
+    function closeattention(obj){
+
+        //document.getElementById(obj).style.display = 'none';
+
+        $('#'+obj).hide();
+
+    }
+
+    function changeOnline(num) {
+
+        if (isNaN(num) && num == "")
+
+            return;
+
+        for (var i = 1; i <=6 ; i++)
+
+        {
+
+            if (i == num)
+
+            {
+
+                $('#onlineSort'+i).attr('class','online_bar expand');
+
+                $('#onlineType'+i).show();
+
+            }
+
+            else
+
+            {
+
+                $('#onlineSort'+i).attr('class','online_bar collapse');
+
+                $('#onlineType'+i).hide();
+
+            }
+
+        }
+
+    }
+
+
+
+    $(document).ready(function(){
+
+        $("#floatShow").bind("click",function(){
+
+            $('#onlineService').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#onlineService').show(); });$('#floatShow').attr('style','display:none');$('#floatHide').attr('style','display:block');
+
+            return false;
+
+        });
+
+        $("#floatHide").bind("click",function(){
+
+            $('#onlineService').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#onlineService').hide(); });$('#floatShow').attr('style','display:block');$('#floatHide').attr('style','display:none');
+
+        });
+
+        $(document).bind("click",function(event){
+
+            if ($(event.target).isChildOf("#online_qq_layer") == false)
+
+            {
+
+                $('#onlineService').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#onlineService').hide(); });$('#floatShow').attr('style','display:block');$('#floatHide').attr('style','display:none');
+
+            }
+
+        });
+
+        jQuery.fn.isChildAndSelfOf = function(b){
+
+            return (this.closest(b).length > 0);
+
+        };
+
+        jQuery.fn.isChildOf = function(b){
+
+            return (this.parents(b).length > 0);
+
+        };
+
+        //$(window).scroll(function(){
+
+        //$('#online_qq_layer').stop().animate({top:$(document).scrollTop() + $("#online_qq_layer").height()}, 100)
+
+        //});
+
+    });
+
+</script>       <div class="banner">
+
+        <div class="bannerBtn">
+
+            <span class="bannerBtn_left"></span>
+
+            <span class="bannerBtn_right"></span>
+        </div>
+<div class="bannerBody">
+
+            <div class="bannerBox clearfix">
+
+                <div class="bannerItem">
+
+                    <div id="crow">
+
+                        <a href="#">上海</a><a href="#">北京</a><a href="#">广州</a><a href="#">徐州</a><a href="#">连云港</a><a href="#">苏州</a><a href="#">盐城</a><a href="#">合肥</a><a href="#">金华</a><a href="#">湖州</a><a href="#">宁波</a><a href="#">绍兴</a><a href="#">衢州</a><a href="#">温州</a><a href="#">台州</a><a href="#">潍坊</a><a href="#">青岛</a><a href="#">泉州</a><a href="#">莆田</a><a href="#">福州</a><a href="#">漳州</a><a href="#">常州</a><a href="#">临沂</a><a href="#">济南</a><a href="#">南京</a><a href="#">无锡</a><a href="#">湖州</a><a href="#">南平</a><a href="#">西安</a><a href="#">咸阳</a><a href="#">乌鲁木齐</a><a href="#">深圳</a><a href="#">珠海</a><a href="#">广州</a><a href="#">惠州</a><a href="#">河源</a><a href="#">汕头</a><a href="#">潮州</a><a href="#">中山</a><a href="#">佛山</a><a href="#">天津</a><a href="#">石家庄</a><a href="#">廊坊</a><a href="#">秦皇岛</a><a href="#">太原</a><a href="#">赤峰</a><a href="#">武汉</a><a href="#">衡阳</a><a href="#">郑州</a><a href="#">赣州</a><a href="#">黄石</a><a href="#">郴州</a><a href="#">安阳</a><a href="#">宜昌</a><a href="#">岳阳</a><a href="#">洛阳</a><a href="#">昆明</a><a href="#">成都</a><a href="#">贵阳</a><a href="#">沈阳</a><a href="#">大连</a><a href="#">丹东</a><a href="#">哈尔滨</a><a href="#">长春</a><a href="#">新西兰</a>
+
+                    </div>
+
+                </div>
+                
+
+                <div class="bannerItem"><img src="{pigcms::RES}/images/003.png" /></a></div>
+
+                <div class="bannerItem"><img src="{pigcms::RES}/images/banner04.png" /></a></div>
+
+                <div class="bannerItem"><img src="{pigcms::RES}/images/banner03.png" /></a></div>
+
+                <div class="bannerItem"><img src="{pigcms::RES}/images/banner02.png" usemap="Map"/>
+
+                  <map name="Map"><area shape="rect" coords="437,482,596,521" vsrc="{pigcms::RES}/swf/v.swf" href="javascript:void(0);">
+
+                    <area shape="rect" coords="265,482,424,521" vsrc="{pigcms::RES}/swf/v.swf" href="javascript:void(0);">
+
+                  </map>
+
+                </div>
+               
+
+            </div>
+
+            <div id="login">
+
+                <div class="loginBg"></div>
+
+              <div class="loginCon">
+
+                    <div class="insite">已有 <span>1,298</span> 家品牌企业入驻</div>
+
+                  <a class="ty" href="index.php?g=User&m=Index&a=login">立即体验</a>
+
+                  <a href="index.php?g=User&m=Index&a=register" target="_blank" class="sq">申请试用</a>                </div>
+
+            </div>
+
+        </div>
+
+       
+        <div class="bannerIcon clearfix"><i class="hover"></i></div>
+
+    </div>
+
+</div>
+<body>
+<div class="TabTitle">
+
+  <ul id="myTab0">
+
+    <li class="active" onClick="nTabs(this,0);">功能介绍</li>
+
+
+
+  </ul>
+
+</div>
+<body oncontextmenu="return false" ondragstart="return false">
+
+</div>
+<div id="divQQbox" class="QQbox">
+	<div id="divOnline" class="Qlist">
+		<div class="OnlineLeft">
+			<div class="con">
+				<ul>
+					<li>售前咨询<a target="_blank" href="tencent://message/?uin={pigcms::C('site_qq')}&&Site=qingang.com.cn&&Menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=1:12345678:42"></a></li>
+					<li>使用支持<a target="_blank" href="tencent://message/?uin={pigcms::C('site_qq')}&&Site=qingang.com.cn&&Menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=1:12345678:42"></a></li>
+					<li>微站服务<a target="_blank" href="tencent://message/?uin={pigcms::C('site_qq')}&&Site=qingang.com.cn&&Menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=1:12345678:42"></a></li>
+					<li>整合营销<a target="_blank" href="tencent://message/?uin={pigcms::C('site_qq')}&&Site=qingang.com.cn&&Menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=1:12345678:42"></a></li>
+					<li>售后服务<a target="_blank" href="tencent://message/?uin={pigcms::C('site_qq')}&&Site=qingang.com.cn&&Menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=1:12345678:42"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="OnlineBtn">
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(function(){
+	//建站热线展开效果
+	$("#divQQbox").hover(
+		function(){
+			$(this).stop(true,false);
+			$(this).animate({left:0},300);	
+		},
+		function(){
+			$(this).animate({left:-276},149);	
+		}
+	)
+	
+});
+</script>
+
+<div class="TabContent">
+
+    <div id="myTab0_Content0">
+
+        <div class="minisitelink">
+
+            <a href="#2">微官网</a>
+
+            <a href="#8">微报名</a>
+
+            <a href="#15">微汽车-车主关怀</a>
+
+            <a href="#4">微游戏</a>
+
+            <a href="#9">微投票</a>
+
+            <a href="#16">微订单-酒店</a>
+
+            <a href="#18">微商城</a>
+
+            <a href="#17">微团购</a>
+
+            <a href="#" target="_self">微上墙</a>
+
+            <a href="#" target="_self">微喜帖</a>
+
+            <a href="#" target="_parent">微相册</a>
+
+            <a href="#3">微会员</a>
+
+            <a href="#16">微汽车-试驾</a>
+
+            <a href="#16">微汽车-保养</a>
+
+            <a href="#16">微订单-课程</a>
+
+            <a href="#3">会员管理</a>
+
+            <a href="#16">微订单-KTV</a>
+
+            <a href="#n5">微外卖</a>
+
+            <a href="#16">微订单-餐厅</a>
+
+            <a href="#16">微订单-图书</a>
+
+            <a href="#16">微订单-美容</a>
+
+            <a href="#14">微彩票</a>
+
+            <a href="#n6">微请柬</a>
+
+            <a href="#5">优惠券</a>
+
+            <a href="#n4">微调研</a>
+
+            <a href="#n1">答题闯关</a>
+
+            <a href="#n3">微直播</a>
+
+            <a href="#n2">微名片</a>
+
+            <a href="#n7">微信支付</a>
+
+            <a href="#n8">微现场</a>        </div>	
+
+        <div class="wrap">
+
+            <p align="center"><a name="1" id="1"></a><img src="{pigcms::RES}/images/1.jpg" /></p>
+
+            <p align="center"><a name="2" id="2"></a><img src="{pigcms::RES}/images/2.jpg" /></p>
+
+            <p align="center"><a name="3" id="3"></a><img src="{pigcms::RES}/images/3.jpg" /></p>
+
+            <p align="center"><a name="4" id="4"></a><img src="{pigcms::RES}/images/4.jpg" /></p>
+
+            <p align="center"><a name="5" id="5"></a><img src="{pigcms::RES}/images/5.jpg" /></p>
+
+            <p align="center"><a name="6" id="6"></a><img src="{pigcms::RES}/images/6.jpg" /></p>
+
+            <p align="center"><a name="7" id="7"></a><img src="{pigcms::RES}/images/7.jpg" /></p>
+
+            <p align="center"><a name="8" id="8"></a><img src="{pigcms::RES}/images/8.jpg" /></p>
+
+            <p align="center"><a name="9" id="9"></a><img src="{pigcms::RES}/images/9.jpg" /></p>
+
+            <p align="center"><a name="11" id="11"></a><img src="{pigcms::RES}/images/11.jpg" /></p>
+
+            <p align="center"><a name="12" id="12"></a><img src="{pigcms::RES}/images/12.jpg" /></p>
+
+            <p align="center"><a name="13" id="13"></a><img src="{pigcms::RES}/images/13.jpg" /></p>
+
+            <p align="center"><a name="14" id="14"></a><img src="{pigcms::RES}/images/14.jpg" /></p>
+
+            <p align="center"><a name="15" id="15"></a><img src="{pigcms::RES}/images/15.jpg" /></p>
+
+            <p align="center"><a name="16" id="16"></a><img src="{pigcms::RES}/images/16.jpg" /></p>
+
+            <p align="center"><a name="17" id="17"></a><img src="{pigcms::RES}/images/17.jpg" /></p>
+
+            <p align="center"><a name="18" id="18"></a><img src="{pigcms::RES}/images/18.jpg" /></p>
+
+            <p align="center"><a name="n1" id="n1"></a><img src="{pigcms::RES}/images/n1.jpg" /></p>
+
+            <p align="center"><a name="n2" id="n2"></a><img src="{pigcms::RES}/images/n2.jpg" /></p>
+
+            <p align="center"><a name="n3" id="n3"></a><img src="{pigcms::RES}/images/n3.jpg" /></p>
+
+            <p align="center"><a name="n4" id="n4"></a><img src="{pigcms::RES}/images/n4.jpg" /></p>
+
+            <p align="center"><a name="n5" id="n5"></a><img src="{pigcms::RES}/images/n5.jpg" /></p>
+
+            <p align="center"><a name="n6" id="n6"></a><img src="{pigcms::RES}/images/n6.jpg" /></p>
+
+            <p align="center"><a name="n7" id="n7"></a><img src="{pigcms::RES}/images/n7.jpg" /></p>
+
+            <p align="center"><a name="n8" id="n8"></a><img src="{pigcms::RES}/images/n8.jpg" /></p>
+
+        </div>
+
+	</div>
+
+    <div id="myTab0_Content1" class="none">
+
+    	<div class="minisitelink">
+
+            <a href="#yj01">微信照片打印机</a>
+
+            <a href="#yj02">微订单打印机</a>
+
+            <a href="#yj03">微信无线Wifi</a>
+
+        </div>
+
+        <div class="wrap">
+
+            <p align="center"><a name="yj01" id="yj01"></a><img src="{pigcms::RES}/images/yj01.jpg" /></p>
+
+            <p align="center"><a name="yj02" id="yj02"></a><img src="{pigcms::RES}/images/yj02.jpg" /></p>
+
+            <p align="center"><a name="yj03" id="yj03"></a><img src="{pigcms::RES}/images/yj03.jpg" /></p>
+
+        </div>
+
+	</div>
+
+
+<div id="footer">
+    <div class="footerCon">
+      <div class="contact"><span class="cin STYLE1">{pigcms::C('site_name')} Copyright © 2014 - 2016 </span><span class="cin STYLE1">{pigcms::C('site_url')}</span></div>
+        <div class="cin STYLE1"> All Rights Reserved. {pigcms::C('copyright')}{pigcms::C('ipc')}</div>
+  </div>
+</div>
+<div id="mask"></div>
+
+<div id="popClose"></div>
+
+</body>
+
+</html>
